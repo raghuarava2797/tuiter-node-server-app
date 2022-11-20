@@ -3,9 +3,11 @@ let tuits = posts;
 
 const createTuit = (req, res) => {
     const newTuit = req.body
-    newTuit._id = (new Date()).getTime() + ""
-    newTuit.likes = 0;
+    newTuit._id = (new Date()).getTime()
+    newTuit.likes = 20;
     newTuit.liked = false
+    newTuit.disliked = true
+    newTuit.dislikes = 10
     newTuit.image = "../../../images/spacex-logo.jpg"
     tuits.push(newTuit)
     res.json(newTuit)
