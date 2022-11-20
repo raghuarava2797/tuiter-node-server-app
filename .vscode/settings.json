@@ -1,4 +1,0 @@
-{
-    "appService.defaultWebAppToDeploy": "/subscriptions/295413da-2c3f-466c-837e-e19c69d8cad6/AppServices/subscriptions/295413da-2c3f-466c-837e-e19c69d8cad6/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/tuiter-server-app",
-    "appService.deploySubpath": "."
-}
