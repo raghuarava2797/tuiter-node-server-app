@@ -1,4 +1,7 @@
-import express from 'express'
+import express from 'express';
+import mangoose from 'mongoose';
+const CONNECTION_STRING = process.env.DB_CONNECTION_STRING || 'mongodb://localhost:27017/tuiter'
+mangoose.connect(CONNECTION_STRING)
 import HelloController from "./controllers/hello-controller.js";
 import UserController from './controllers/users/user-controller.js';
 import TuitsController from './controllers/tuits/tuits-controller.js';
